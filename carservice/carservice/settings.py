@@ -84,9 +84,8 @@ DATABASES = {
         'USER': 'maqtupoqhdqwek'
         'PORT': '5432'
         'PASSWORD':'e4edd6606aced97e7edf1bc6ef29d0484c85663acf2e8f7ca9091b084549fbd0'
-        'URI': 'postgres://maqtupoqhdqwek:e4edd6606aced97e7edf1bc6ef29d0484c85663acf2e8f7ca9091b084549fbd0@ec2-50-17-225-140.compute-1.amazonaws.com:5432/dblva3o1ihlm6'
-        'HEROKU CLI': 'heroku pg:psql postgresql-trapezoidal-36501 --app codemohitapp'
-}
+        }
+        }
 
 
 # Password validation
