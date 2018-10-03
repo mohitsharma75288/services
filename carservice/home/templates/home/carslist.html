@@ -1,0 +1,88 @@
+  {% extends "base.html" %}
+  {% load static %}
+
+    {% block content %}
+
+    	<!-- start banner Area -->
+			<section class="banner-area relative" id="home">	
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								Car List
+							</h1>	
+							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="team.html"> Car List</a></p>
+						</div>											
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->	
+
+    {% if carList %}
+  
+			<!-- Start team Area -->
+			<section class="team-area section-gap team-page-teams" id="team">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-12">
+							<div class="title text-center">
+								<h1 class="mb-10">Cars Collections</h1>
+								<p>Who are in extremely love with eco friendly system.</p>
+							</div>
+							<div>
+								<table class="table table-striped">
+								    <thead>
+								      <tr>
+								      	<th>Image</th>
+								        <th>Name</th>
+								        <th>MSI</th>
+								        <th>Price</th>
+								        <th>Capacity</th>
+								        <th>AirCondition</th>
+								        <th>Transmission</th>
+								        <th>Action</th>
+								      </tr>
+								    </thead>
+								    <tbody>
+								    	{% for car in carList%}
+								    		<tr>
+								    			<td><img src="{{car.carimage }}" style="width:100px;height:70px;" /> </td>	
+								    			<td>{{ car.name }}</td>	
+								    			<td>{{ car.msi }}</td>	
+								    			<td>{{ car.price }}</td>	
+								    			<td>{{ car.capacity }}</td>	
+								    			<td>{{ car.aircondition }}</td>	
+								    			<td>{{ car.transmission }}</td>	
+								    			<td><a href="editcar/{{car.id}}">Edit</a> | <a href="delete/{{car.id}}">Delete</a></td>
+								    		</tr>		
+								    	{% endfor %}
+								    </tbody>
+								  </table>
+							</div>
+						</div>
+					</div>		
+				</div>				
+			</section>
+    
+    {% else %}
+
+			<!-- Start team Area -->
+			<section class="team-area section-gap team-page-teams" id="team">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-12">
+							<div class="title text-center">
+								<h1 class="mb-10">Cars Collections</h1>
+								<p>No record found </p>
+							</div>
+							
+						</div>
+					</div>		
+				</div>				
+			</section>
+
+
+    {% endif%}
+					
+	{% endblock %}
