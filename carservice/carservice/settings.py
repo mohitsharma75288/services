@@ -84,6 +84,9 @@ DATABASES = {
         'PASSWORD': '36cc0ef6e2d364eabb2e0e540ea6ef5591c82e2359e4c5bab7329c51b7d59152',
         'HOST': 'ec2-54-235-90-0.compute-1.amazonaws.com',
         'PORT': '5432',
+
+       'URI': 'postgres://jooohdsxojfffc:36cc0ef6e2d364eabb2e0e540ea6ef5591c82e2359e4c5bab7329c51b7d59152@ec2-54-235-90-0.compute-1.amazonaws.com:5432/df8miorpqacfnp',
+       'Heroku CLI': 'heroku pg:psql postgresql-cylindrical-71229 --app practicework',
 }
 }
 
