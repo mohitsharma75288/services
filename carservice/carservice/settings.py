@@ -25,7 +25,7 @@ SECRET_KEY = '%&7v2dpr3qj=ju=4^9l^zlzj-%y#9cf6sfogczb$w*q*1h3e7_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [127.0.0.1,'localhost', 'http://mohitcodeapp.herokuapp.com/','https://mohitcodeapp.herokuapp.com/']
+ALLOWED_HOSTS = [127.0.0.1,'localhost', 'http://codemohitapp.herokuapp.com/','https://codemohitapp.herokuapp.com/']
 
 
 # Application definition
@@ -79,14 +79,13 @@ WSGI_APPLICATION = 'carservice.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'df8miorpqacfnp'
-        'USER': 'jooohdsxojfffc',
-        'PASSWORD': '36cc0ef6e2d364eabb2e0e540ea6ef5591c82e2359e4c5bab7329c51b7d59152',
-        'HOST': 'ec2-54-235-90-0.compute-1.amazonaws.com',
-        'PORT': '5432',
-        'URI': 'postgres://jooohdsxojfffc:36cc0ef6e2d364eabb2e0e540ea6ef5591c82e2359e4c5bab7329c51b7d59152@ec2-54-235-90-0.compute-1.amazonaws.com:5432/df8miorpqacfnp',
-        'Heroku CLI': 'heroku pg:psql postgresql-cylindrical-71229 --app practicework',
-}
+        'HOST': 'ec2-50-17-225-140.compute-1.amazonaws.com'
+        'NAME': 'dblva3o1ihlm6'
+        'USER': 'maqtupoqhdqwek'
+        'PORT': '5432'
+        'PASSWORD':'e4edd6606aced97e7edf1bc6ef29d0484c85663acf2e8f7ca9091b084549fbd0'
+        'URI': 'postgres://maqtupoqhdqwek:e4edd6606aced97e7edf1bc6ef29d0484c85663acf2e8f7ca9091b084549fbd0@ec2-50-17-225-140.compute-1.amazonaws.com:5432/dblva3o1ihlm6'
+        'HEROKU CLI': 'heroku pg:psql postgresql-trapezoidal-36501 --app codemohitapp'
 }
 
 
