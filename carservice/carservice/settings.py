@@ -79,13 +79,15 @@ WSGI_APPLICATION = 'carservice.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'HOST': 'ec2-50-17-225-140.compute-1.amazonaws.com',
         'NAME': 'dblva3o1ihlm6',
         'USER': 'maqtupoqhdqwek',
+        'HOST': 'ec2-50-17-225-140.compute-1.amazonaws.com',
         'PORT': '5432',
         'PASSWORD':'e4edd6606aced97e7edf1bc6ef29d0484c85663acf2e8f7ca9091b084549fbd0',
+        
         }
-        }
+  
+  }
 
 
 # Password validation
