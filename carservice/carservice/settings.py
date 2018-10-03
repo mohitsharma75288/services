@@ -31,8 +31,8 @@ ALLOWED_HOSTS = [127.0.0.1,'localhost', 'http://mohitcodeapp.herokuapp.com/','ht
 # Application definition
 
 INSTALLED_APPS = [
-    'adminstrator.apps.AdminstratorConfig',
-    'home.apps.HomeConfig',
+    'adminstrator',
+    'home',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -84,8 +84,6 @@ DATABASES = {
         'PASSWORD': '64e298fa3cc3ab17da8ff5fe979f163929f3c5915ac37acd7376bc7bd9c5aa4a',
         'HOST': 'ec2-54-225-97-112.compute-1.amazonaws.com',
         'PORT': '5432',
-        'URI':'postgres://tvqvlwarghhikr:64e298fa3cc3ab17da8ff5fe979f163929f3c5915ac37acd7376bc7bd9c5aa4a@ec2-54-225-97-112.compute-1.amazonaws.com:5432/d6up7clj91rsp2',
-        'Heroku CLI':'heroku pg:psql postgresql-metric-84384 --app mohitcodeapp',
     }
 }
 
